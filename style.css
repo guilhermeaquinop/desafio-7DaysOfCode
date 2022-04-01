@@ -135,6 +135,8 @@ body{
 .metricas{
     display: flex;
     justify-content: center;
+    height: 288px;
+    width: 100%;
     gap: 32px;
 }
 
@@ -157,6 +159,154 @@ body{
     font-weight: 400;
     color:#667085;
 }
+
+/* ========================= */
+
+.vagas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 1798px;
+    width: 100%;
+}
+
+.vagas-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 96px;
+}
+
+.container-spanBase{
+    height: 28px;
+    width: 125px;
+    border: none;
+    border-radius: 16px;
+    margin-bottom: 16px;
+    padding: 4px 12px;
+    background: rgba(142, 36, 36, 0.05);
+}
+
+.container-spanBase span{
+    font-size: 14px;
+    font-weight: 500;
+    color: #8E2424;
+}
+
+.vagas-heading{
+    font-size: 36px;
+    font-weight: 600;
+    color: #101828;
+    margin-bottom: 20px;
+}
+.vagas-supportingTxt{
+    font-size: 20px;
+    font-weight: 400;
+    color:#667085;
+    margin-bottom: 64px;
+}
+
+.vagas img{
+    height: 400px;
+    width: 100%;
+    padding: 0px 112px;
+}
+
+.vagas-container-campos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0px 299px;
+}
+
+.vagas-opcoes{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.vaga-tipo{
+    font-size: 20px;
+    font-weight: 500;
+    color: #101828;
+    margin-top: 64px;
+    margin-bottom: 32px;
+}
+.vaga-campos{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.vaga-campo{
+    display: flex;
+    flex-direction: column;
+    height: 136px;
+    border: 1px solid #EAECF0;
+    border-radius: 16px;
+    padding: 24px;
+    cursor: pointer;
+}
+
+.vaga-nome{
+    font-size: 18px;
+    font-weight: 500;
+    color: #101828;
+    margin-bottom: 32px;
+}
+
+.vaga-infos{
+    display: flex;
+    gap: 24px;
+}
+
+.vaga-infos span{
+    font-size: 16px;
+    font-weight: 500;
+    color: #667085;
+}
+
+.depoimentos{
+    display: flex;
+    justify-content: center;
+    padding: 0 112px;
+}
+
+.depoimentos-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 404px;
+    width: 100%;
+    padding: 0 50px;
+    background: rgba(195, 25, 25, 0.03);
+}
+
+.depoimentos-texts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 64px;
+}
+
+.depoimentos-texts span{
+    font-size: 14px;
+    font-weight: 600;
+    color: #8E2424;
+    margin-bottom: 16px;
+}
+
+.depoimentos-texts p{
+    font-size: 33px;
+    font-weight: 500;
+    color: #101828;
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+
+
+
 
 
 
