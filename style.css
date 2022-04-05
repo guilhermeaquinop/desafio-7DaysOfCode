@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+:root{
+    --red-color: #8E2424;
+    --gray-font-color: #667085;
+    --black-font-color: #101828;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -9,93 +15,70 @@
 
 body{
     height: 100vh;
-    width: 100%;
+    width: 100% ;
 }
 
-.NavBar{
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+nav ul{
     display: flex;
     align-items: center;
-    height: 80px;
-    width: 100%;
-    padding: 0px 112px;
+    list-style: none;    
+    gap: 2rem;  
 }
 
-.logo-empresa{
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-}
-.NavBar img{
-    width: 27px;
-    height: 27px;
-    margin-right: 8px;
-}
-
-.NavBar p{
-    font-size: 18px;
-    font-weight: 500;
-    color: #3A404E;
-}
-
-.NavBar ul{
-    display: flex;
-    align-items: center;
-    gap: 32px;
-    margin: 0 345px 0 119px;
-    list-style: none;
-}
-
-.NavBar ul li:last-child{
-    width: 78px;
-}
-
-.NavBar ul li a{
-    font-weight: 500;
+nav ul li a{
     text-decoration: none;
-    color: #667085;
+    font-weight: 500;
+    color: var(--gray-font-color);
 }
 
-.buttons-nav{
+.buttons{
     display: flex;
     align-items: center;
     gap: 12px;
 }
 
-.button-nav-1{
+button{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 27px;
     width: 47px;
-    padding: 10px 18px;
+    padding: 0.7rem 1.1rem;
     font-size: 16px;
-    height: 500;
-    color: #667085;
-    background: none;
+    height: 500;   
+     background: none;
     border: none;
+    border-radius: 0.5rem;
+    color: var(--gray-font-color);
     cursor: pointer;
 }
 
-.button-nav-2{
+button#button-cadastrar{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 47px;
     width: 112px;
-    padding: 10px 18px;
+    background: var(--red-color);
+    padding: 0.7rem 1.1rem;    
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    border-radius: 0.5rem;
     font-size: 16px;
     height: 500;
     color: #FFFFFF;
-    background: #8E2424;
-    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
-    border-radius: 8px;
-    border: 1px solid #8E2424;
     cursor: pointer;
 }
 
 /* ========================= */
 
-.cabecalho{
+.sobre-nos{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -103,59 +86,63 @@ body{
     width: 100%;
 }
 
-.cabecalho-container{
+.sobre-nos-container{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.cabecalho-subheading{
-    font-size: 16px;
+.sobre-nos span{
     font-weight: 600;
-    color: #8E2424;
+    color: var(--red-color);
     margin-bottom: 24px;
 }
 
-.cabecalho-heading{
-    font-size: 48px;
+.sobre-nos h1{
+    font-size: 3rem;
     font-weight: 600;
-    color: #101828;
+    color: var(--black-font-color);
     margin-bottom: 36px;
 }
 
-.cabecalho-supportingTxt{
-    font-size: 20px;
+.sobre-nos p{
+    font-size: 1.25rem;
     font-weight: 400;
-    color: #667085;
     text-align: center;
+    line-height: 2rem;
+    color: var(--gray-font-color); 
 }
 
 /* ========================= */
 
-.metricas{
+.metricas-container{
     display: flex;
     justify-content: center;
     height: 288px;
     width: 100%;
-    padding: 0 112px;
-    gap: 32px;
+    gap: 2rem;
 }
 
-.number{
+.metrica p{
     font-size: 60px;
     font-weight: 600;
     color: #8E2424;
     margin-bottom: 12px;
 }
 
-.text-head{
+.metrica-texto{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.metrica-texto span{
    font-size: 18px;
    font-weight: 500;
    color: #101828;
-   margin-bottom: 8px;
 }
 
-.text-sup{
+.metrica-texto p{
     font-size: 16px;
     font-weight: 400;
     color:#667085;
